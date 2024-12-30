@@ -1,0 +1,49 @@
+---
+---
+
+.site-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.site-title-logo {
+  width: 8rem;
+  height: 8rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+
+.site-title-separator {
+  min-width: 100%;
+  max-height: fit-content;
+  border: 0.1rem solid #a5a5a5;
+}
+
+.site-nav {
+  float: left;
+}
+
+.home-page-link {
+  font-size: 1.6rem;
+  color: black;
+}
+
+.home-page-link-text {
+  font-size: 1.4rem;
+}
+
+.footer-made-with {
+  text-align: center;
+
+}
+.footer-made-with-text {
+  /*  background: rgba(215,215,215,1);
+    border: 0.2rem solid rgba(215,215,215,1);*/
+  padding: 0.5rem;
+}
+
+.footer-made-with-text > .svg-icon { width: 20px; height: 20px; display: inline-block; fill: #828282; padding-right: 0; vertical-align: center; }

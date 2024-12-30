@@ -1,0 +1,49 @@
+<!--Modified from minima's footer.html-->
+
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            {%- if site.author -%}
+              {{ site.author | escape }}
+            {%- else -%}
+              Contact me, maybe.
+            {%- endif -%}
+            </li>
+            {%- if site.email -%}
+            <li>
+              {% for email in site.email %}
+                <a class="u-email" href="mailto:{{ email }}">{{ email }}</a>
+                <br/>
+              {% endfor %}
+            </li>
+            {%- endif -%}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        {%- include social.html -%}
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{- site.description | escape -}}</p>
+      </div>
+    </div>
+    <div class="footer-made-with">
+      <span class="footer-made-with-text">
+        Made with ✋ (hands) using&nbsp;
+        <img src="{{ "/assets/img/jekyll-test-tube.svg" | relative_url }}" class="svg-icon" alt="jekyll logo">
+        &nbsp;(Jekyll)
+      </span>
+    </div>
+
+  </div>
+
+</footer>
