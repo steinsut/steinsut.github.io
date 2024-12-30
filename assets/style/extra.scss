@@ -27,12 +27,33 @@
   float: left;
 }
 
-.home-page-link {
-  font-size: 1.6rem;
-  color: black;
+.funny-page-link {
+  font-size: 1rem;
+
+  &:visited {
+    color: white;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    background: linear-gradient(90deg in hsl longer hue, red 0 50%, red 0 50%) 0/200%;
+    color: transparent;
+    background-clip: text;
+    animation: rainbow-gradient 6s linear infinite;
+  }
 }
 
-.home-page-link-text {
+@keyframes rainbow-gradient {
+  to {
+    background-position: 100%
+  }
+}
+
+.home-page-link {
+  font-size: 1.6rem;
+}
+
+.home-page-link-desc {
   font-size: 1.4rem;
 }
 
